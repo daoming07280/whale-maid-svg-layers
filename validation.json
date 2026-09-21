@@ -1,0 +1,15 @@
+{
+  "canvas": [
+    1229,
+    1536
+  ],
+  "semantic_layers": 59,
+  "native_vector_paths": 92381,
+  "embedded_images": 0,
+  "source_mean_absolute_color_error": 3.4960501353290843,
+  "reconstruction_neutral_mean_absolute_color_change": 0.006421598126299611,
+  "png_recomposition_mean_absolute_color_error": 0.008770610139227917,
+  "psd_reopened": true,
+  "psd_layer_count": 59,
+  "cubism_editor_tested": false
+}

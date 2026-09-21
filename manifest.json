@@ -1,0 +1,1084 @@
+{
+  "schema_version": 1,
+  "canvas": {
+    "width": 1229,
+    "height": 1536
+  },
+  "coordinates": "top-left origin; character-right is screen-left",
+  "layer_order": "bottom-to-top",
+  "source": "reference.png",
+  "master": "whale-maid.svg",
+  "method": "Source-guided vector tracing and semantic separation; complete native vector redraw for face, sclera, brows, and mouth; inferred hidden-area extensions.",
+  "raster_embedded_in_svg": false,
+  "live2d_rigged": false,
+  "parts": [
+    {
+      "index": 1,
+      "id": "tail",
+      "label": "鲸尾",
+      "z": 0,
+      "role": "tail",
+      "svg": "parts/svg/01-tail.svg",
+      "png": "parts/png/01-tail.png",
+      "visible_pixels": 58043,
+      "visible_bbox": [
+        745,
+        876,
+        1190,
+        1307
+      ],
+      "reconstructed_pixels": 8044,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 2,
+      "id": "back-hair-r",
+      "label": "后发·角色右（画面左）",
+      "z": 10,
+      "role": "hair",
+      "svg": "parts/svg/02-back-hair-r.svg",
+      "png": "parts/png/02-back-hair-r.png",
+      "visible_pixels": 91104,
+      "visible_bbox": [
+        99,
+        220,
+        608,
+        1023
+      ],
+      "reconstructed_pixels": 201222,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 3,
+      "id": "back-hair-l",
+      "label": "后发·角色左（画面右）",
+      "z": 11,
+      "role": "hair",
+      "svg": "parts/svg/03-back-hair-l.svg",
+      "png": "parts/png/03-back-hair-l.png",
+      "visible_pixels": 89230,
+      "visible_bbox": [
+        608,
+        220,
+        1083,
+        1018
+      ],
+      "reconstructed_pixels": 194192,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 4,
+      "id": "leg-r",
+      "label": "腿·角色右",
+      "z": 15,
+      "role": "leg",
+      "svg": "parts/svg/04-leg-r.svg",
+      "png": "parts/png/04-leg-r.png",
+      "visible_pixels": 12153,
+      "visible_bbox": [
+        434,
+        1159,
+        559,
+        1294
+      ],
+      "reconstructed_pixels": 7912,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 5,
+      "id": "leg-l",
+      "label": "腿·角色左",
+      "z": 16,
+      "role": "leg",
+      "svg": "parts/svg/05-leg-l.svg",
+      "png": "parts/png/05-leg-l.png",
+      "visible_pixels": 11870,
+      "visible_bbox": [
+        636,
+        1161,
+        763,
+        1294
+      ],
+      "reconstructed_pixels": 7589,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 6,
+      "id": "shoe-r",
+      "label": "鞋·角色右",
+      "z": 20,
+      "role": "shoe",
+      "svg": "parts/svg/06-shoe-r.svg",
+      "png": "parts/png/06-shoe-r.png",
+      "visible_pixels": 11628,
+      "visible_bbox": [
+        427,
+        1345,
+        561,
+        1473
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 7,
+      "id": "shoe-l",
+      "label": "鞋·角色左",
+      "z": 21,
+      "role": "shoe",
+      "svg": "parts/svg/07-shoe-l.svg",
+      "png": "parts/png/07-shoe-l.png",
+      "visible_pixels": 11967,
+      "visible_bbox": [
+        639,
+        1326,
+        787,
+        1473
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 8,
+      "id": "sock-r",
+      "label": "袜口·角色右",
+      "z": 22,
+      "role": "sock",
+      "svg": "parts/svg/08-sock-r.svg",
+      "png": "parts/png/08-sock-r.png",
+      "visible_pixels": 6867,
+      "visible_bbox": [
+        419,
+        1265,
+        552,
+        1365
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 9,
+      "id": "sock-l",
+      "label": "袜口·角色左",
+      "z": 23,
+      "role": "sock",
+      "svg": "parts/svg/09-sock-l.svg",
+      "png": "parts/png/09-sock-l.png",
+      "visible_pixels": 6895,
+      "visible_bbox": [
+        647,
+        1265,
+        771,
+        1362
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 10,
+      "id": "sock-bow-r",
+      "label": "袜饰·角色右",
+      "z": 24,
+      "role": "accessory",
+      "svg": "parts/svg/10-sock-bow-r.svg",
+      "png": "parts/png/10-sock-bow-r.png",
+      "visible_pixels": 2134,
+      "visible_bbox": [
+        414,
+        1281,
+        464,
+        1359
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 11,
+      "id": "sock-bow-l",
+      "label": "袜饰·角色左",
+      "z": 25,
+      "role": "accessory",
+      "svg": "parts/svg/11-sock-bow-l.svg",
+      "png": "parts/png/11-sock-bow-l.png",
+      "visible_pixels": 1830,
+      "visible_bbox": [
+        739,
+        1280,
+        787,
+        1348
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 12,
+      "id": "skirt",
+      "label": "裙身",
+      "z": 30,
+      "role": "skirt",
+      "svg": "parts/svg/12-skirt.svg",
+      "png": "parts/png/12-skirt.png",
+      "visible_pixels": 70414,
+      "visible_bbox": [
+        264,
+        807,
+        920,
+        1188
+      ],
+      "reconstructed_pixels": 88749,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 13,
+      "id": "skirt-hem",
+      "label": "裙摆花边",
+      "z": 31,
+      "role": "frill",
+      "svg": "parts/svg/13-skirt-hem.svg",
+      "png": "parts/png/13-skirt-hem.png",
+      "visible_pixels": 20424,
+      "visible_bbox": [
+        263,
+        1013,
+        932,
+        1205
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 14,
+      "id": "neck",
+      "label": "脖颈",
+      "z": 40,
+      "role": "neck",
+      "svg": "parts/svg/14-neck.svg",
+      "png": "parts/png/14-neck.png",
+      "visible_pixels": 1062,
+      "visible_bbox": [
+        572,
+        609,
+        630,
+        641
+      ],
+      "reconstructed_pixels": 4109,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 15,
+      "id": "topwear",
+      "label": "上身服装",
+      "z": 41,
+      "role": "torso",
+      "svg": "parts/svg/15-topwear.svg",
+      "png": "parts/png/15-topwear.png",
+      "visible_pixels": 4046,
+      "visible_bbox": [
+        479,
+        606,
+        740,
+        814
+      ],
+      "reconstructed_pixels": 39328,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 16,
+      "id": "sleeve-r",
+      "label": "蓬袖·角色右",
+      "z": 42,
+      "role": "upper_arm",
+      "svg": "parts/svg/16-sleeve-r.svg",
+      "png": "parts/png/16-sleeve-r.png",
+      "visible_pixels": 6643,
+      "visible_bbox": [
+        393,
+        656,
+        490,
+        822
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 17,
+      "id": "sleeve-l",
+      "label": "蓬袖·角色左",
+      "z": 43,
+      "role": "upper_arm",
+      "svg": "parts/svg/17-sleeve-l.svg",
+      "png": "parts/png/17-sleeve-l.png",
+      "visible_pixels": 7074,
+      "visible_bbox": [
+        707,
+        663,
+        797,
+        820
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 18,
+      "id": "forearm-r",
+      "label": "小臂袖·角色右",
+      "z": 44,
+      "role": "forearm",
+      "svg": "parts/svg/18-forearm-r.svg",
+      "png": "parts/png/18-forearm-r.png",
+      "visible_pixels": 8775,
+      "visible_bbox": [
+        310,
+        794,
+        447,
+        917
+      ],
+      "reconstructed_pixels": 240,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 19,
+      "id": "forearm-l",
+      "label": "小臂袖·角色左",
+      "z": 45,
+      "role": "forearm",
+      "svg": "parts/svg/19-forearm-l.svg",
+      "png": "parts/png/19-forearm-l.png",
+      "visible_pixels": 7891,
+      "visible_bbox": [
+        751,
+        794,
+        877,
+        920
+      ],
+      "reconstructed_pixels": 473,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 20,
+      "id": "sleeve-frill-r",
+      "label": "袖边·角色右",
+      "z": 46,
+      "role": "frill",
+      "svg": "parts/svg/20-sleeve-frill-r.svg",
+      "png": "parts/png/20-sleeve-frill-r.png",
+      "visible_pixels": 2697,
+      "visible_bbox": [
+        375,
+        774,
+        465,
+        850
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 21,
+      "id": "sleeve-frill-l",
+      "label": "袖边·角色左",
+      "z": 47,
+      "role": "frill",
+      "svg": "parts/svg/21-sleeve-frill-l.svg",
+      "png": "parts/png/21-sleeve-frill-l.png",
+      "visible_pixels": 2908,
+      "visible_bbox": [
+        728,
+        777,
+        814,
+        850
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 22,
+      "id": "hand-r",
+      "label": "手·角色右",
+      "z": 48,
+      "role": "hand",
+      "svg": "parts/svg/22-hand-r.svg",
+      "png": "parts/png/22-hand-r.png",
+      "visible_pixels": 3841,
+      "visible_bbox": [
+        232,
+        875,
+        338,
+        946
+      ],
+      "reconstructed_pixels": 783,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 23,
+      "id": "hand-l",
+      "label": "手·角色左",
+      "z": 49,
+      "role": "hand",
+      "svg": "parts/svg/23-hand-l.svg",
+      "png": "parts/png/23-hand-l.png",
+      "visible_pixels": 3795,
+      "visible_bbox": [
+        846,
+        878,
+        948,
+        947
+      ],
+      "reconstructed_pixels": 651,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 24,
+      "id": "cuff-r",
+      "label": "手腕花边·角色右",
+      "z": 50,
+      "role": "cuff",
+      "svg": "parts/svg/24-cuff-r.svg",
+      "png": "parts/png/24-cuff-r.png",
+      "visible_pixels": 2207,
+      "visible_bbox": [
+        288,
+        858,
+        361,
+        939
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 25,
+      "id": "cuff-l",
+      "label": "手腕花边·角色左",
+      "z": 51,
+      "role": "cuff",
+      "svg": "parts/svg/25-cuff-l.svg",
+      "png": "parts/png/25-cuff-l.png",
+      "visible_pixels": 1898,
+      "visible_bbox": [
+        824,
+        861,
+        896,
+        938
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 26,
+      "id": "waist",
+      "label": "腰封",
+      "z": 53,
+      "role": "belt",
+      "svg": "parts/svg/26-waist.svg",
+      "png": "parts/png/26-waist.png",
+      "visible_pixels": 11171,
+      "visible_bbox": [
+        486,
+        769,
+        705,
+        832
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 27,
+      "id": "apron-frill",
+      "label": "围裙外花边",
+      "z": 54,
+      "role": "frill",
+      "svg": "parts/svg/27-apron-frill.svg",
+      "png": "parts/png/27-apron-frill.png",
+      "visible_pixels": 24695,
+      "visible_bbox": [
+        448,
+        812,
+        755,
+        1076
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 28,
+      "id": "apron",
+      "label": "围裙主体",
+      "z": 55,
+      "role": "apron",
+      "svg": "parts/svg/28-apron.svg",
+      "png": "parts/png/28-apron.png",
+      "visible_pixels": 37468,
+      "visible_bbox": [
+        474,
+        830,
+        717,
+        1034
+      ],
+      "reconstructed_pixels": 3664,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 29,
+      "id": "whale-emblem",
+      "label": "围裙鲸鱼图案",
+      "z": 56,
+      "role": "emblem",
+      "svg": "parts/svg/29-whale-emblem.svg",
+      "png": "parts/png/29-whale-emblem.png",
+      "visible_pixels": 3664,
+      "visible_bbox": [
+        616,
+        920,
+        705,
+        1003
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 30,
+      "id": "skirt-bow-r",
+      "label": "裙饰蝴蝶结·角色右",
+      "z": 57,
+      "role": "accessory",
+      "svg": "parts/svg/30-skirt-bow-r.svg",
+      "png": "parts/png/30-skirt-bow-r.png",
+      "visible_pixels": 9138,
+      "visible_bbox": [
+        357,
+        972,
+        453,
+        1122
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 31,
+      "id": "skirt-bow-l",
+      "label": "裙饰蝴蝶结·角色左",
+      "z": 58,
+      "role": "accessory",
+      "svg": "parts/svg/31-skirt-bow-l.svg",
+      "png": "parts/png/31-skirt-bow-l.png",
+      "visible_pixels": 8767,
+      "visible_bbox": [
+        747,
+        973,
+        846,
+        1115
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 32,
+      "id": "bodice-frill-r",
+      "label": "胸前花边·角色右",
+      "z": 59,
+      "role": "frill",
+      "svg": "parts/svg/32-bodice-frill-r.svg",
+      "png": "parts/png/32-bodice-frill-r.png",
+      "visible_pixels": 8504,
+      "visible_bbox": [
+        454,
+        610,
+        532,
+        768
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 33,
+      "id": "bodice-frill-l",
+      "label": "胸前花边·角色左",
+      "z": 60,
+      "role": "frill",
+      "svg": "parts/svg/33-bodice-frill-l.svg",
+      "png": "parts/png/33-bodice-frill-l.png",
+      "visible_pixels": 8093,
+      "visible_bbox": [
+        664,
+        611,
+        739,
+        766
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 34,
+      "id": "bodice",
+      "label": "胸前衬衣",
+      "z": 61,
+      "role": "bodice",
+      "svg": "parts/svg/34-bodice.svg",
+      "png": "parts/png/34-bodice.png",
+      "visible_pixels": 12794,
+      "visible_bbox": [
+        507,
+        626,
+        686,
+        773
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 35,
+      "id": "chest-bow",
+      "label": "领结",
+      "z": 62,
+      "role": "accessory",
+      "svg": "parts/svg/35-chest-bow.svg",
+      "png": "parts/png/35-chest-bow.png",
+      "visible_pixels": 9155,
+      "visible_bbox": [
+        530,
+        624,
+        666,
+        724
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 36,
+      "id": "chest-gem",
+      "label": "领结宝石",
+      "z": 63,
+      "role": "accessory",
+      "svg": "parts/svg/36-chest-gem.svg",
+      "png": "parts/png/36-chest-gem.png",
+      "visible_pixels": 914,
+      "visible_bbox": [
+        579,
+        633,
+        618,
+        678
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 37,
+      "id": "ears-r",
+      "label": "鳍耳·角色右",
+      "z": 66,
+      "role": "ear",
+      "svg": "parts/svg/37-ears-r.svg",
+      "png": "parts/png/37-ears-r.png",
+      "visible_pixels": 11893,
+      "visible_bbox": [
+        149,
+        386,
+        323,
+        528
+      ],
+      "reconstructed_pixels": 5292,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 38,
+      "id": "ears-l",
+      "label": "鳍耳·角色左",
+      "z": 67,
+      "role": "ear",
+      "svg": "parts/svg/38-ears-l.svg",
+      "png": "parts/png/38-ears-l.png",
+      "visible_pixels": 14935,
+      "visible_bbox": [
+        856,
+        378,
+        1066,
+        527
+      ],
+      "reconstructed_pixels": 3473,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 39,
+      "id": "face",
+      "label": "脸底",
+      "z": 70,
+      "role": "face",
+      "svg": "parts/svg/39-face.svg",
+      "png": "parts/png/39-face.png",
+      "visible_pixels": 39680,
+      "visible_bbox": [
+        424,
+        307,
+        773,
+        615
+      ],
+      "reconstructed_pixels": 78924,
+      "reconstruction": "Complete native vector backing reconstructed from reference; no baked-in hair/eye/mouth contours.",
+      "native_redraw": true
+    },
+    {
+      "index": 40,
+      "id": "eyewhite-r",
+      "label": "眼白·角色右",
+      "z": 74,
+      "role": "eye",
+      "svg": "parts/svg/40-eyewhite-r.svg",
+      "png": "parts/png/40-eyewhite-r.png",
+      "visible_pixels": 2495,
+      "visible_bbox": [
+        434,
+        431,
+        541,
+        522
+      ],
+      "reconstructed_pixels": 6080,
+      "reconstruction": "Complete native vector backing reconstructed from reference; no baked-in hair/eye/mouth contours.",
+      "native_redraw": true
+    },
+    {
+      "index": 41,
+      "id": "eyewhite-l",
+      "label": "眼白·角色左",
+      "z": 75,
+      "role": "eye",
+      "svg": "parts/svg/41-eyewhite-l.svg",
+      "png": "parts/png/41-eyewhite-l.png",
+      "visible_pixels": 2760,
+      "visible_bbox": [
+        652,
+        428,
+        767,
+        521
+      ],
+      "reconstructed_pixels": 6074,
+      "reconstruction": "Complete native vector backing reconstructed from reference; no baked-in hair/eye/mouth contours.",
+      "native_redraw": true
+    },
+    {
+      "index": 42,
+      "id": "irides-r",
+      "label": "虹膜·角色右",
+      "z": 76,
+      "role": "iris",
+      "svg": "parts/svg/42-irides-r.svg",
+      "png": "parts/png/42-irides-r.png",
+      "visible_pixels": 5016,
+      "visible_bbox": [
+        463,
+        436,
+        538,
+        520
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 43,
+      "id": "irides-l",
+      "label": "虹膜·角色左",
+      "z": 77,
+      "role": "iris",
+      "svg": "parts/svg/43-irides-l.svg",
+      "png": "parts/png/43-irides-l.png",
+      "visible_pixels": 5026,
+      "visible_bbox": [
+        657,
+        435,
+        734,
+        517
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 44,
+      "id": "eyelash-r",
+      "label": "上睫毛·角色右",
+      "z": 78,
+      "role": "eyelash",
+      "svg": "parts/svg/44-eyelash-r.svg",
+      "png": "parts/png/44-eyelash-r.png",
+      "visible_pixels": 2150,
+      "visible_bbox": [
+        421,
+        411,
+        540,
+        493
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 45,
+      "id": "eyelash-l",
+      "label": "上睫毛·角色左",
+      "z": 79,
+      "role": "eyelash",
+      "svg": "parts/svg/45-eyelash-l.svg",
+      "png": "parts/png/45-eyelash-l.png",
+      "visible_pixels": 1997,
+      "visible_bbox": [
+        656,
+        413,
+        772,
+        484
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 46,
+      "id": "eyebrow-r",
+      "label": "眉·角色右",
+      "z": 80,
+      "role": "brow",
+      "svg": "parts/svg/46-eyebrow-r.svg",
+      "png": "parts/png/46-eyebrow-r.png",
+      "visible_pixels": 496,
+      "visible_bbox": [
+        466,
+        336,
+        514,
+        366
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": "Complete native vector backing reconstructed from reference; no baked-in hair/eye/mouth contours.",
+      "native_redraw": true
+    },
+    {
+      "index": 47,
+      "id": "eyebrow-l",
+      "label": "眉·角色左",
+      "z": 81,
+      "role": "brow",
+      "svg": "parts/svg/47-eyebrow-l.svg",
+      "png": "parts/png/47-eyebrow-l.png",
+      "visible_pixels": 199,
+      "visible_bbox": [
+        668,
+        337,
+        702,
+        358
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": "Complete native vector backing reconstructed from reference; no baked-in hair/eye/mouth contours.",
+      "native_redraw": true
+    },
+    {
+      "index": 48,
+      "id": "mouth-open",
+      "label": "嘴·张口",
+      "z": 82,
+      "role": "mouth",
+      "svg": "parts/svg/48-mouth-open.svg",
+      "png": "parts/png/48-mouth-open.png",
+      "visible_pixels": 2457,
+      "visible_bbox": [
+        569,
+        532,
+        628,
+        585
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": "Complete native vector backing reconstructed from reference; no baked-in hair/eye/mouth contours.",
+      "native_redraw": true
+    },
+    {
+      "index": 49,
+      "id": "front-curl-r",
+      "label": "前侧卷发·角色右",
+      "z": 84,
+      "role": "hair",
+      "svg": "parts/svg/49-front-curl-r.svg",
+      "png": "parts/png/49-front-curl-r.png",
+      "visible_pixels": 20680,
+      "visible_bbox": [
+        327,
+        522,
+        457,
+        762
+      ],
+      "reconstructed_pixels": 3263,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 50,
+      "id": "front-curl-l",
+      "label": "前侧卷发·角色左",
+      "z": 85,
+      "role": "hair",
+      "svg": "parts/svg/50-front-curl-l.svg",
+      "png": "parts/png/50-front-curl-l.png",
+      "visible_pixels": 19572,
+      "visible_bbox": [
+        738,
+        524,
+        863,
+        763
+      ],
+      "reconstructed_pixels": 2896,
+      "reconstruction": "inferred hidden overlap; not present in source"
+    },
+    {
+      "index": 51,
+      "id": "head-frill",
+      "label": "女仆头饰花边",
+      "z": 86,
+      "role": "headwear",
+      "svg": "parts/svg/51-head-frill.svg",
+      "png": "parts/png/51-head-frill.png",
+      "visible_pixels": 24872,
+      "visible_bbox": [
+        346,
+        83,
+        870,
+        312
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 52,
+      "id": "headband",
+      "label": "头箍内圈",
+      "z": 87,
+      "role": "headwear",
+      "svg": "parts/svg/52-headband.svg",
+      "png": "parts/png/52-headband.png",
+      "visible_pixels": 10725,
+      "visible_bbox": [
+        373,
+        133,
+        842,
+        312
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 53,
+      "id": "bang-r-outer",
+      "label": "外侧刘海·角色右",
+      "z": 89,
+      "role": "hair",
+      "svg": "parts/svg/53-bang-r-outer.svg",
+      "png": "parts/png/53-bang-r-outer.png",
+      "visible_pixels": 4311,
+      "visible_bbox": [
+        307,
+        304,
+        454,
+        556
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 54,
+      "id": "bang-l-outer",
+      "label": "外侧刘海·角色左",
+      "z": 90,
+      "role": "hair",
+      "svg": "parts/svg/54-bang-l-outer.svg",
+      "png": "parts/png/54-bang-l-outer.png",
+      "visible_pixels": 2095,
+      "visible_bbox": [
+        736,
+        293,
+        868,
+        567
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 55,
+      "id": "bang-r",
+      "label": "刘海·角色右",
+      "z": 91,
+      "role": "hair",
+      "svg": "parts/svg/55-bang-r.svg",
+      "png": "parts/png/55-bang-r.png",
+      "visible_pixels": 42307,
+      "visible_bbox": [
+        327,
+        152,
+        593,
+        554
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 56,
+      "id": "bang-l",
+      "label": "刘海·角色左",
+      "z": 92,
+      "role": "hair",
+      "svg": "parts/svg/56-bang-l.svg",
+      "png": "parts/png/56-bang-l.png",
+      "visible_pixels": 45505,
+      "visible_bbox": [
+        605,
+        152,
+        857,
+        564
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 57,
+      "id": "bang-center",
+      "label": "中央刘海",
+      "z": 93,
+      "role": "hair",
+      "svg": "parts/svg/57-bang-center.svg",
+      "png": "parts/png/57-bang-center.png",
+      "visible_pixels": 34339,
+      "visible_bbox": [
+        511,
+        169,
+        675,
+        467
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 58,
+      "id": "head-bow",
+      "label": "蓝色发侧蝴蝶结",
+      "z": 96,
+      "role": "accessory",
+      "svg": "parts/svg/58-head-bow.svg",
+      "png": "parts/png/58-head-bow.png",
+      "visible_pixels": 6574,
+      "visible_bbox": [
+        831,
+        300,
+        936,
+        391
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    },
+    {
+      "index": 59,
+      "id": "ahoge",
+      "label": "呆毛",
+      "z": 97,
+      "role": "hair",
+      "svg": "parts/svg/59-ahoge.svg",
+      "png": "parts/png/59-ahoge.png",
+      "visible_pixels": 7994,
+      "visible_bbox": [
+        391,
+        12,
+        630,
+        174
+      ],
+      "reconstructed_pixels": 0,
+      "reconstruction": null
+    }
+  ]
+}
