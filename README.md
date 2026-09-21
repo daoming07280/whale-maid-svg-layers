@@ -24,8 +24,8 @@
 - **生成提示词**：`我给你这张图片，请你重新绘制一张svg+拆分。`
 - **提示词配套参考图**：[`prompt-reference.png`](prompt-reference.png)（上表左侧，本次重绘所依据的角色图）
 - **高分辨率参考**：[`reference.png`](reference.png)（1229×1536，管线中用于描摹与校验）
-- **后续目标**：将分层 PSD / SVG 通过 **[psd2live](https://github.com/tsunehimatoi/psd2live)** 制作成 Live2D 的 `.cmo3` / `.moc3` 系列文件
-- **当前状态**：已完成 SVG 重绘 + 59 层语义拆分与 PSD 交付；`.moc3` 尚未生成（见下文 [psd2live 工作流](#关于-psd2live)）
+- **管线目标**：将分层 PSD / SVG 通过 **[psd2live](https://github.com/tsunehimatoi/psd2live)** 制作成 Live2D 的 `.cmo3` / `.moc3` 系列文件
+- **当前状态**：**SVG 重绘 + 59 层拆分 + psd2live → moc3 系列均已完成**。Live2D 运行时模型见 [`live2d/whale_maid/`](live2d/whale_maid/)。
 
 本稿依据用户提供的角色参考图制作。身体、头发与服装采用轮廓、色块转路径及部件边界划分；脸底、眼白、眉毛和嘴部另用原生曲线与渐变重画，使脸底不携带原先被遮挡位置的眉眼和发边。尽量保留原图比例、表情、色彩与装饰，但部分光影和线条会有所简化。SVG 中不嵌入位图。为保留原图细节，路径数量较多，并非极简线稿。
 
@@ -45,24 +45,52 @@
 
 ### 本仓库与 psd2live 的衔接
 
-本仓库交付的是**分层美术素材**，不是绑定完成的 Live2D 模型：
+完整链路已在本机跑通，**moc3 系列已收入本仓库**：
 
 ```text
 prompt-reference.png / reference.png
         │  GPT-6-Astra 提示词：重绘 SVG + 拆分
         ▼
 whale-maid.svg  +  parts/svg/*  +  parts/png/*
-        │  栅格化 / 图层命名对齐
+        │  栅格化 / 图层语义映射（去编号 → psd2live 层名）
         ▼
-whale-maid-layered.psd   （59 层，层序与画布偏移已保留）
-        │  psd2live（目标管线）
+whale-maid-layered.psd  →  live2d/whale_maid/source_psd.psd
+        │  psd2live 导出（2026-09-18）
         ▼
-.cmo3 / .moc3 / physics3 / idle.motion3   （尚未在本仓库生成）
+live2d/whale_maid/whale-maid-live2d.moc3  +  .cmo3  +  physics/motion/贴图
 ```
 
-层名已尽量贴近 psd2live 常用语义（`face`、`eyewhite`、`irides`、`eyelash`、`eyebrow`、`mouth-open`、`bang-*`、`back-hair-*`、`tail` 等），导入前仍建议对照其 [PSD 图层规范](https://github.com/tsunehimatoi/psd2live/blob/main/docs/zh/PSD_LAYER_SPEC.md) 做一次改名与层序预检。
+原始 59 层名带编号（如 `39 face`），直接喂 psd2live 会失败；导出前做了语义映射（`face` / `mouth` / `front hair` / `back hair` / `handwear` 等），映射后的 PSD 为 `live2d/whale_maid/source_psd.psd`。VTS 结构检查：EyeBlink / LipSync 齐全。
 
-相关本机流水线实验记录见：[daoming07280/live2d-auto-pipeline](https://github.com/daoming07280/live2d-auto-pipeline)。
+相关流水线实验记录见：[daoming07280/live2d-auto-pipeline](https://github.com/daoming07280/live2d-auto-pipeline)。
+
+## Live2D 模型包（psd2live 导出）
+
+目录：[`live2d/whale_maid/`](live2d/whale_maid/)
+
+| 文件 | 说明 |
+|---|---|
+| **`whale-maid-live2d.moc3`** | 运行时模型（约 5.0 MB） |
+| `whale-maid-live2d.cmo3` | Cubism Modeler 可编辑工程（约 10.2 MB） |
+| `whale-maid-live2d.model3.json` | 加载清单 |
+| `whale-maid-live2d.physics3.json` | 物理（发 / 眼等） |
+| `whale-maid-live2d.cdi3.json` | 显示名称元数据 |
+| `idle / blink / nod / shake.motion3.json` | 待机、眨眼、点头、摇头 |
+| `whale-maid-live2d.4096/texture_00–09.png` | 10 张 4096 贴图集 |
+| `whale-maid-live2d.psd2live.json` | 诊断与映射元数据 |
+| `source_psd.psd` | 语义映射后的 Live2D 输入 PSD |
+| `original_layered.psd` | 原始 59 层 PSD 备份 |
+| `source_preview.png` | 导出时的源预览 |
+
+### 在 VTube Studio 中使用
+
+将整个 `live2d/whale_maid/` 文件夹拷入：
+
+```text
+VTube Studio/VTube Studio_Data/StreamingAssets/Live2DModels/
+```
+
+即可在 VTS 中加载。自动绑骨为初版；闭眼、口型、大角度转头仍建议用 Cubism 打开 `.cmo3` 精修。
 
 ## 文件
 
@@ -70,7 +98,8 @@ whale-maid-layered.psd   （59 层，层序与画布偏移已保留）
 |---|---|
 | `whale-maid.svg` | **完整角色 SVG**，59 个命名部件组，支持 Inkscape 图层 |
 | `whale-maid.png` | 透明底合成图（SVG 渲染预览） |
-| `whale-maid-layered.psd` | 59 层栅格绘图素材，保留层序和位置（psd2live 直接输入） |
+| `whale-maid-layered.psd` | 59 层栅格绘图素材，保留层序和位置（psd2live 原始输入） |
+| `live2d/whale_maid/` | **psd2live 导出的 moc3 系列**（运行时 + cmo3 + 贴图 + 动作） |
 | `parts/svg/` | 59 个独立部件 SVG |
 | `parts/png/` | 59 个独立透明部件 PNG |
 | `prompt-reference.png` | **提示词配套参考图**（GPT-6-Astra 输入侧） |
@@ -97,14 +126,14 @@ whale-maid-layered.psd   （59 层，层序与画布偏移已保留）
 
 ## Live2D 接续工作
 
-这份交付是**分层美术素材**，尚不是绑定完成的 Live2D 模型。未生成 `.cmo3` 或 `.moc3`；没有完整闭眼、口型、转头参数或物理绑定，也未在 Cubism Editor 内实测导入。
+**psd2live 自动导出已完成**，运行时模型与 `.cmo3` 工程在 [`live2d/whale_maid/`](live2d/whale_maid/)。自动绑骨为初版：已含 EyeBlink / LipSync 结构、物理与 idle/blink/nod/shake 动作；闭眼差分、自然口型与大角度转头仍可能需要在 Cubism Modeler 打开 `.cmo3` 精修。
 
-建议流程：
+精修建议顺序：
 
-1. 用 `whale-maid-layered.psd` 导入 psd2live（或 Cubism Editor）
-2. 按 psd2live 规范核对层名与层序（尤其 `eyewhite` 在 `irides` 之下、睫毛仅上睫毛、嘴为最大张口）
-3. 自动或手动完成：眼部开合与视线 → 头部小幅转向 → 呼吸 → 头发、鳍耳与鲸尾物理
-4. 开始时用小角度验证补绘边缘，再扩大动作范围
+1. 用 Cubism 打开 `live2d/whale_maid/whale-maid-live2d.cmo3`，检查层序与遮挡
+2. 核对参数：眼部开合与视线 → 头部小幅转向 → 呼吸 → 头发、鳍耳与鲸尾物理
+3. 小角度验证补绘边缘后，再扩大动作范围
+4. 如需重跑自动导出：用 `source_psd.psd`（语义层名）再喂 psd2live；原始编号层为 `original_layered.psd` / 仓库根目录 `whale-maid-layered.psd`
 
 ## 复现
 

@@ -1,0 +1,59 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "whale-maid-live2d.moc3",
+		"Textures": [
+			"whale-maid-live2d.4096/texture_00.png",
+			"whale-maid-live2d.4096/texture_01.png",
+			"whale-maid-live2d.4096/texture_02.png",
+			"whale-maid-live2d.4096/texture_03.png",
+			"whale-maid-live2d.4096/texture_04.png",
+			"whale-maid-live2d.4096/texture_05.png",
+			"whale-maid-live2d.4096/texture_06.png",
+			"whale-maid-live2d.4096/texture_07.png",
+			"whale-maid-live2d.4096/texture_08.png",
+			"whale-maid-live2d.4096/texture_09.png"
+		],
+		"Physics": "whale-maid-live2d.physics3.json",
+		"DisplayInfo": "whale-maid-live2d.cdi3.json",
+		"Motions": {
+			"Idle": [
+				{
+					"File": "whale-maid-live2d.idle.motion3.json"
+				}
+			],
+			"Blink": [
+				{
+					"File": "whale-maid-live2d.blink.motion3.json"
+				}
+			],
+			"Nod": [
+				{
+					"File": "whale-maid-live2d.nod.motion3.json"
+				}
+			],
+			"Shake": [
+				{
+					"File": "whale-maid-live2d.shake.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	]
+}
